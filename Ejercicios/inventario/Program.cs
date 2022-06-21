@@ -1,4 +1,5 @@
 ﻿using System;
+
  namespace inventario
  {
     class Program
@@ -9,21 +10,21 @@
 
             while (true)
             {
-                console.Clear();
-                console.WriteLine("SISTEMA DE INVENTARIO");
-                console.WriteLine("*********************");
-                console.WriteLine("");
-                console.WriteLine("1- Productos");
-                console.WriteLine("2- Ingreso de Inventario");
-                console.WriteLine("3- Salida de Inventario");
-                console.WriteLine("0- Salir");
-                opcion = console.Read();
+                Console.Clear();
+                Console.WriteLine("SISTEMA DE INVENTARIO");
+                Console.WriteLine("*********************");
+                Console.WriteLine("");
+                Console.WriteLine("1- Productos");
+                Console.WriteLine("2- Ingreso de Inventario");
+                Console.WriteLine("3- Salida de Inventario");
+                Console.WriteLine("0- Salir");
+                opcion = Console.Read();
 
                 switch (opcion)
                 {
                     case 1:
-                      console.WriteLine("Productos!");
-                      console.Read(); //sirve para hacer pausa
+                      Console.WriteLine("Productos!");
+                      Console.Read(); //sirve para hacer pausa
                       //listaProductos();
                       break;
                     
