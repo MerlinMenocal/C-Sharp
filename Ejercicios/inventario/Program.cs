@@ -28,8 +28,9 @@
                       break;
                     
                     default:
+                    break;
                 }
-                
+
                 if (opcion ==0)
                 {
                     break;
