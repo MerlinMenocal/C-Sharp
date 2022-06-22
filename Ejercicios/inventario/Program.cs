@@ -25,6 +25,7 @@
             {
                 Console.WriteLine(productos[i,0] + " | " + productos[i, 1] + " | " + productos[i,2]);
             }
+            Console.ReadLine();
          }
 
          static void movimientoInventario (string codigo, int cantidad, string tipoMovimiento){
@@ -55,13 +56,29 @@
             Console.WriteLine("INGRESO DE PRODUCTOS AL INVENTARIO");
             Console.WriteLine("**********************************");
             Console.WriteLine("Ingrese el Codigo de Producto: ");
-            codigoProducto.Console.ReadLine();
+            codigoProducto = Console.ReadLine();
             Console.WriteLine("Ingrese la cantidad del Producto: ");
-            cantidad.Console.ReadLine();
+            cantidad = Console.ReadLine();
 
 
             movimientoInventario(codigoProducto, Int32.Parse(cantidad), "+");
         }
+
+        static void salidaInventario(){
+            string codigoProducto= "";
+            string cantidad = "";
+
+            Console.Clear();
+            Console.WriteLine("SALIDA DE PRODUCTOS DEL INVENTARIO");
+            Console.WriteLine("**********************************");
+            Console.Write("Ingrese el Codigo de Producto: ");
+            codigoProducto = Console.ReadLine();
+            Console.Write("Ingrese la cantidad del Producto: ");
+            cantidad = Console.ReadLine();
+
+            movimientoInventario(codigoProducto, Int32.Parse(cantidad), "-");
+        }
+
 
         static void Main(string[] args)
         {
@@ -84,16 +101,18 @@
                     case "1":
                       listaProductos();
                       break;
-
+            
                     case "2":
                       ingresoInventario();
-                      break;  
+                      break;
+
+                    case "3":
+                      salidaInventario();
+                      break;   
                     
                     default:
                     break;
                 }
-                //pausa
-                Console.ReadLine();
 
                 if (opcion =="")
                 {
