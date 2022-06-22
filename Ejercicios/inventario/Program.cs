@@ -27,6 +27,42 @@
             }
          }
 
+         static void movimientoInventario (string codigo, int cantidad, string tipoMovimiento){
+            for (int i = 0; i <5; i++)
+            {
+                if (productos[i,0]== codigo)
+                {
+                    if (tipoMovimiento == "+")
+                        {
+                            productos[i, 2]= (Int32.Parse(productos[i,2]) + cantidad).ToString();
+                            //               convierte texto a tipo entero            convierte a string
+                        }else{
+                            productos[i, 2]= (Int32.Parse(productos[i,2]) - cantidad).ToString();
+                        }
+                }
+
+            }
+   
+}
+
+        private static void ingresoInventario()
+        {
+            string codigoProducto = "";
+            string cantidad = "";
+
+            Console.Clear();
+            Console.WriteLine();
+            Console.WriteLine("INGRESO DE PRODUCTOS AL INVENTARIO");
+            Console.WriteLine("**********************************");
+            Console.WriteLine("Ingrese el Codigo de Producto: ");
+            codigoProducto.Console.ReadLine();
+            Console.WriteLine("Ingrese la cantidad del Producto: ");
+            cantidad.Console.ReadLine();
+
+
+            movimientoInventario(codigoProducto, Int32.Parse(cantidad), "+");
+        }
+
         static void Main(string[] args)
         {
             string opcion ="";
@@ -48,6 +84,10 @@
                     case "1":
                       listaProductos();
                       break;
+
+                    case "2":
+                      ingresoInventario();
+                      break;  
                     
                     default:
                     break;
