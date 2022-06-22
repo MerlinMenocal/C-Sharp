@@ -127,6 +127,8 @@
                 Console.WriteLine("1- Productos");
                 Console.WriteLine("2- Ingreso de Inventario");
                 Console.WriteLine("3- Salida de Inventario");
+                Console.WriteLine("4- Ajuste Positivo al Inventario");
+                Console.WriteLine("5- Ajuste Negativo al Inventario");
                 Console.WriteLine("0- Salir");
                 opcion = Console.ReadLine();
 
