@@ -55,7 +55,7 @@
             Console.WriteLine();
             Console.WriteLine("INGRESO DE PRODUCTOS AL INVENTARIO");
             Console.WriteLine("**********************************");
-            Console.WriteLine("Ingrese el Codigo de Producto: ");
+            Console.Write("Ingrese el Codigo de Producto: ");
             codigoProducto = Console.ReadLine();
             Console.WriteLine("Ingrese la cantidad del Producto: ");
             cantidad = Console.ReadLine();
