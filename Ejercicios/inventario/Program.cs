@@ -6,7 +6,7 @@
     {
         static void Main(string[] args)
         {
-            int opcion = 0;
+            string opcion ="";
 
             while (true)
             {
@@ -18,11 +18,11 @@
                 Console.WriteLine("2- Ingreso de Inventario");
                 Console.WriteLine("3- Salida de Inventario");
                 Console.WriteLine("0- Salir");
-                opcion = Console.Read();
+                opcion = Console.ReadLine();
 
                 switch (opcion)
                 {
-                    case 1:
+                    case "1"
                       Console.WriteLine("Productos!");
                       Console.Read(); //sirve para hacer pausa
                       //listaProductos();
@@ -32,7 +32,7 @@
                     break;
                 }
 
-                if (opcion ==0)
+                if (opcion =="")
                 {
                     break;
                 }
