@@ -5,7 +5,7 @@
     class Program
     {
         //[,]divide cuantas columnas y filas
-        string[,] productos = new string[5,3]
+        static string[,] productos = new string[5,3]
         {
             {"001", "IphoneX", "0"},
             {"002","Table Samsumg A8","100"},
@@ -14,7 +14,7 @@
             {"005","Monitor HP","24"}
         };
         
-         void listaProductos(){
+         static void listaProductos(){
             Console.Clear();
             Console.WriteLine("");
             Console.WriteLine("Listado de Productos");
@@ -46,14 +46,14 @@
                 switch (opcion)
                 {
                     case "1":
-                      Console.WriteLine("Productos!");
-                      Console.Read(); //sirve para hacer pausa
-                      //listaProductos();
+                      listaProductos();
                       break;
                     
                     default:
                     break;
                 }
+                //pausa
+                Console.ReadLine();
 
                 if (opcion =="")
                 {
