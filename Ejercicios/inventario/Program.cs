@@ -87,7 +87,7 @@
             Console.Clear();
             Console.WriteLine();
             Console.WriteLine("AJUSTE POSITIVO AL INVENTARIO");
-            Console.WriteLine("**********************************");
+            Console.WriteLine("*****************************");
             Console.WriteLine("Ingrese el Codigo de Producto: ");
             codigoProducto = Console.ReadLine();
             Console.WriteLine("Ingrese la cantidad del Producto: ");
@@ -103,7 +103,7 @@
 
             Console.Clear();
             Console.WriteLine("AJUSTES NEGATIVOS AL INVENTARIO");
-            Console.WriteLine("**********************************");
+            Console.WriteLine("*******************************");
             Console.WriteLine("Ingrese el Codigo de Producto: ");
             codigoProducto = Console.ReadLine();
             Console.Write("Ingrese la cantidad del Producto: ");
