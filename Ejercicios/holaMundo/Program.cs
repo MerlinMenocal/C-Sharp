@@ -6,6 +6,5 @@
     }
 }
 
-internal class Program : NewBaseType
 {
 }
