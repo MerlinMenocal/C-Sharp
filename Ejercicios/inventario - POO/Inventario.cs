@@ -71,7 +71,7 @@ public class Inventario{
         cantidad = Console.ReadLine();
 
 
-        movimientoInventario(codigoProducto, Int32.Parse(cantidad), "+");
+        movimientoInventario(codigo, Int32.Parse(cantidad), "+");
     }
 
 }
