@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "akamud.vscode-theme-onedark",
-        "BeardedBear.beardedtheme"
+        "beardedbear.beardedtheme",
+        "adrianwilczynski.namespace"
     ]
 }
