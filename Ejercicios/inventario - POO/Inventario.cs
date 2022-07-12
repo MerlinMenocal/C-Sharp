@@ -15,11 +15,11 @@ public class Inventario{
       Producto d = new Producto("004", "CPU Dell", 15);
       Producto e = new Producto("005", "Monitor HP", 5);
 
-      listaProductos.Add(a);
-      listaProductos.Add(b);
-      listaProductos.Add(c);
-      listaProductos.Add(d);
-      listaProductos.Add(e);
+      ListadeProductos.Add(a);
+      ListadeProductos.Add(b);
+      ListadeProductos.Add(c);
+      ListadeProductos.Add(d);
+      ListadeProductos.Add(e);
     }
 
  public void listarProductos()
