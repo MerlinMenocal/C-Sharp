@@ -9,7 +9,7 @@ a.inactivarAlumno();
 Console.WriteLine(a.nombreCompleto());
 Console.WriteLine(b.nombreCompleto());
 
-console.WriteLine("");
+Console.WriteLine("");
 
 a.activarAlumno();
 Console.WriteLine(a.nombreCompleto());
