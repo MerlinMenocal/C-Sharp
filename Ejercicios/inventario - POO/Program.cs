@@ -5,9 +5,6 @@
     class Program
     {
         
-         
-
-
         static void salidaInventario(){
             string codigoProducto= "";
             string cantidad = "";
