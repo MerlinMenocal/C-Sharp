@@ -6,7 +6,7 @@ public class Alumno {
 
     public string SegundoNombre {get; set; }
 
-    public Alumno(int, id, string primerNombre, string segundoNombre){
+    public Alumno(int id, string primerNombre, string segundoNombre){
         Id = id;
         PrimerNombre = primerNombre;
         SegundoNombre = segundoNombre;
