@@ -8,6 +8,7 @@ public class Inventario{
     public Inventario()
     {
       ListadeProductos = new List<Producto>();
+
       Producto a = new Producto("001", "IphoneX", 0);
       Producto b = new Producto("002", "Table Samsumg A8", 5);
       Producto c = new Producto("003", "Laptop Dell", 10);
@@ -19,7 +20,6 @@ public class Inventario{
       listaProductos.Add(c);
       listaProductos.Add(d);
       listaProductos.Add(e);
-
     }
 
  public void listaProductos()
@@ -56,9 +56,9 @@ public class Inventario{
         }
    }
 
- public void ingresoInventario()
+ public void ingresoDeInventario()
     {
-        string codigoProducto = "";
+        string codigo= "";
         string cantidad = "";
 
         Console.Clear();

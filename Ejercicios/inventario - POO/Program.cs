@@ -6,53 +6,53 @@
     {
         
          
-        static void salidaInventario(){
-            string codigoProducto= "";
-            string cantidad = "";
+    //     static void salidaInventario(){
+    //         string codigoProducto= "";
+    //         string cantidad = "";
 
-            Console.Clear();
-            Console.WriteLine("SALIDA DE PRODUCTOS DEL INVENTARIO");
-            Console.WriteLine("**********************************");
-            Console.WriteLine("Ingrese el Codigo de Producto: ");
-            codigoProducto = Console.ReadLine();
-            Console.Write("Ingrese la cantidad del Producto: ");
-            cantidad = Console.ReadLine();
+    //         Console.Clear();
+    //         Console.WriteLine("SALIDA DE PRODUCTOS DEL INVENTARIO");
+    //         Console.WriteLine("**********************************");
+    //         Console.WriteLine("Ingrese el Codigo de Producto: ");
+    //         codigoProducto = Console.ReadLine();
+    //         Console.Write("Ingrese la cantidad del Producto: ");
+    //         cantidad = Console.ReadLine();
 
-            movimientoInventario(codigoProducto, Int32.Parse(cantidad), "-");
-        }
+    //         movimientoInventario(codigoProducto, Int32.Parse(cantidad), "-");
+    //     }
 
-        static void ajustePositivo(){
+    //     static void ajustePositivo(){
 
-            string codigoProducto = "";
-            string cantidad = "";
+    //         string codigoProducto = "";
+    //         string cantidad = "";
 
-            Console.Clear();
-            Console.WriteLine();
-            Console.WriteLine("AJUSTE POSITIVO AL INVENTARIO");
-            Console.WriteLine("*****************************");
-            Console.WriteLine("Ingrese el Codigo de Producto: ");
-            codigoProducto = Console.ReadLine();
-            Console.WriteLine("Ingrese la cantidad del Producto: ");
-            cantidad = Console.ReadLine();
+    //         Console.Clear();
+    //         Console.WriteLine();
+    //         Console.WriteLine("AJUSTE POSITIVO AL INVENTARIO");
+    //         Console.WriteLine("*****************************");
+    //         Console.WriteLine("Ingrese el Codigo de Producto: ");
+    //         codigoProducto = Console.ReadLine();
+    //         Console.WriteLine("Ingrese la cantidad del Producto: ");
+    //         cantidad = Console.ReadLine();
 
 
-            movimientoInventario(codigoProducto, Int32.Parse(cantidad), "+");
-        } 
+    //         movimientoInventario(codigoProducto, Int32.Parse(cantidad), "+");
+    //     } 
 
-       static void ajusteNegativo(){
-            string codigoProducto= "";
-            string cantidad = "";
+    //    static void ajusteNegativo(){
+    //         string codigoProducto= "";
+    //         string cantidad = "";
 
-            Console.Clear();
-            Console.WriteLine("AJUSTES NEGATIVOS AL INVENTARIO");
-            Console.WriteLine("*******************************");
-            Console.WriteLine("Ingrese el Codigo de Producto: ");
-            codigoProducto = Console.ReadLine();
-            Console.Write("Ingrese la cantidad del Producto: ");
-            cantidad = Console.ReadLine();
+    //         Console.Clear();
+    //         Console.WriteLine("AJUSTES NEGATIVOS AL INVENTARIO");
+    //         Console.WriteLine("*******************************");
+    //         Console.WriteLine("Ingrese el Codigo de Producto: ");
+    //         codigoProducto = Console.ReadLine();
+    //         Console.Write("Ingrese la cantidad del Producto: ");
+    //         cantidad = Console.ReadLine();
 
-            movimientoInventario(codigoProducto, Int32.Parse(cantidad), "-");
-        }
+    //         movimientoInventario(codigoProducto, Int32.Parse(cantidad), "-");
+    //     }
 
 
 
@@ -83,20 +83,20 @@
                       break;
             
                     case "2":
-                      inventario.ingresoInventario();
+                      inventario.ingresoDeInventario();
                       break;
 
-                    case "3":
-                      salidaInventario();
-                      break;  
+                    // case "3":
+                    //   salidaInventario();
+                    //   break;  
 
-                    case "4":
-                      ajustePositivo();
-                      break;  
+                    // case "4":
+                    //   ajustePositivo();
+                    //   break;  
 
-                    case "5":
-                      ajusteNegativo();
-                      break;  
+                    // case "5":
+                    //   ajusteNegativo();
+                    //   break;  
                     
                     default:
                     break;
