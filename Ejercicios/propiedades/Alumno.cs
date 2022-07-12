@@ -14,8 +14,8 @@ public Alumno(){
      Id =id;
  }
 
-public Alumno(string primerNomnre, string segundoNombre){
-     PrimerNombre = primerNomnre;
+public Alumno(string primerNombre, string segundoNombre){
+     PrimerNombre = primerNombre;
      SegundoNombre = segundoNombre;
  }
 

@@ -19,4 +19,4 @@ Alumno d = new Alumno("Juan", "Sorto");
 Console.WriteLine(a.PrimerNombre);
 Console.WriteLine(b.PrimerNombre);
 Console.WriteLine(c.PrimerNombre);
-Console.WriteLine(d.PrimerNombre + " " + SegundoNombre);
+Console.WriteLine(d.PrimerNombre + " " + d.SegundoNombre);
