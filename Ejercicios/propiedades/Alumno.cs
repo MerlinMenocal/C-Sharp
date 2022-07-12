@@ -14,4 +14,11 @@ public Alumno(){
      Id =id;
  }
 
+public Alumno(string primerNomnre, string segundoNombre){
+     PrimerNombre = primerNomnre;
+     SegundoNombre = segundoNombre;
+ }
+
+
+
 }

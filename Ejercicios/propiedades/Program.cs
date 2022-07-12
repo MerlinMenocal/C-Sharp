@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+//Console.WriteLine("Hello, World!");
 
 Alumno a = new Alumno();
 a.PrimerNombre = "Juan";
@@ -13,8 +13,10 @@ b.SegundoNombre = "Martinez";
 Alumno c = new Alumno(3);
 c.PrimerNombre = "Alicia";
 
+Alumno d = new Alumno("Juan", "Sorto");
 
 
 Console.WriteLine(a.PrimerNombre);
 Console.WriteLine(b.PrimerNombre);
 Console.WriteLine(c.PrimerNombre);
+Console.WriteLine(d.PrimerNombre + " " + SegundoNombre);
