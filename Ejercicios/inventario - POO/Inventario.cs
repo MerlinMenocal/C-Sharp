@@ -22,7 +22,7 @@ public class Inventario{
       listaProductos.Add(e);
     }
 
- public void listaProductos()
+ public void listarProductos()
     {
         Console.Clear();
         Console.WriteLine("");
@@ -66,7 +66,7 @@ public class Inventario{
         Console.WriteLine("INGRESO DE PRODUCTOS AL INVENTARIO");
         Console.WriteLine("**********************************");
         Console.WriteLine("Ingrese el Codigo de Producto: ");
-        codigoProducto = Console.ReadLine();
+        codigo = Console.ReadLine();
         Console.WriteLine("Ingrese la cantidad del Producto: ");
         cantidad = Console.ReadLine();
 

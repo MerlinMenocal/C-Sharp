@@ -79,7 +79,7 @@
                 switch (opcion)
                 {
                     case "1":
-                      inventario.listaProductos();
+                      inventario.listarProductos();
                       break;
             
                     case "2":
