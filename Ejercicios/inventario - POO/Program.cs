@@ -86,17 +86,17 @@
                       inventario.ingresoDeInventario();
                       break;
 
-                    // case "3":
-                    //   salidaInventario();
-                    //   break;  
+                    case "3":
+                      inventario.salidaInventario();
+                      break;  
 
-                    // case "4":
-                    //   ajustePositivo();
-                    //   break;  
+                    case "4":
+                      inventario.ajustePositivo();
+                      break;  
 
-                    // case "5":
-                    //   ajusteNegativo();
-                    //   break;  
+                    case "5":
+                      inventario.ajusteNegativo();
+                      break;  
                     
                     default:
                     break;
