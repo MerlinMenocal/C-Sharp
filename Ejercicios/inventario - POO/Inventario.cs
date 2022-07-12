@@ -1,19 +1,24 @@
 using System;
+using System.Collections.Generic;
 
 public class Inventario{
 
-    //[,]divide cuantas columnas y filas
-    string[,] productos = new string[5,3]
-    {
-        {"001", "IphoneX", "0"},
-        {"002","Table Samsumg A8","100"},
-        {"003","Laptop Dell","85"},
-        {"004","CPU Dell","20"},
-        {"005","Monitor HP","24"}
-    };
+    public List<Producto> ListadeProductos {get; set; }
 
     public Inventario()
     {
+      ListadeProductos = new List<Producto>();
+      Producto a = new Producto("001", "IphoneX", 0);
+      Producto b = new Producto("002", "Table Samsumg A8", 5);
+      Producto c = new Producto("003", "Laptop Dell", 10);
+      Producto d = new Producto("004", "CPU Dell", 15);
+      Producto e = new Producto("005", "Monitor HP", 5);
+
+      listaProductos.Add(a);
+      listaProductos.Add(b);
+      listaProductos.Add(c);
+      listaProductos.Add(d);
+      listaProductos.Add(e);
 
     }
 
@@ -25,9 +30,9 @@ public class Inventario{
         Console.WriteLine("********************");
         Console.WriteLine("Codigo, Descripcion y Existencia");
 
-        for (int i = 0; i < 5; i++)
+        foreach (var producto in ListadeProductos)
         {
-            Console.WriteLine(productos[i,0] + " | " + productos[i, 1] + " | " + productos[i,2]);
+            Console.WriteLine(producto.Codigo + " | " + producto.Descripcion + " | " + producto.Existencia.ToString());
         }
         Console.ReadLine();
     }
@@ -35,21 +40,20 @@ public class Inventario{
 
  private void movimientoInventario (string codigo, int cantidad, string tipoMovimiento)
     {
-        for (int i = 0; i <5; i++)
+        foreach (var producto in ListadeProductos) 
         {
-            if (productos[i,0]== codigo)
-            {
+          if (producto.Codigo == codigo)
+             {
                 if (tipoMovimiento == "+")
                     {
-                        productos[i, 2]= (Int32.Parse(productos[i,2]) + cantidad).ToString();
-                        //               convierte texto a tipo entero            convierte a string
+                        producto.Existencia = producto.Existencia + cantidad;
+                  
                     }else{
-                        productos[i, 2]= (Int32.Parse(productos[i,2]) - cantidad).ToString();
+                        producto.Existencia = producto.Existencia - cantidad;
                     }
-            }
+             }
 
         }
-
    }
 
  public void ingresoInventario()
