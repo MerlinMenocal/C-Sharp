@@ -5,8 +5,14 @@
 Alumno a = new Alumno(1, "Juan", "Perez");
 Alumno b = new Alumno(2, "Maria", "Coto");
 
-a.InactivarAlumno();
-
+a.inactivarAlumno();
 Console.WriteLine(a.nombreCompleto());
 Console.WriteLine(b.nombreCompleto());
+
+console.WriteLine("");
+
+a.activarAlumno();
+Console.WriteLine(a.nombreCompleto());
+Console.WriteLine(b.nombreCompleto());
+
 

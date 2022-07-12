@@ -26,7 +26,11 @@ public class Alumno {
         return "Alumno Inactivo!";
         
     }
-  public void InactivarAlumno (){
+  public void inactivarAlumno (){
     Activo = false;
+  }
+
+  public void activarAlumno (){
+    Activo = true;
   }
 }
