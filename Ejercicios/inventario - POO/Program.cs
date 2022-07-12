@@ -102,7 +102,7 @@
                     break;
                 }
 
-                if (opcion =="")
+                if (opcion =="0")
                 {
                     break;
                 }
