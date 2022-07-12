@@ -2,7 +2,6 @@
 Console.WriteLine("Hello, World!");
 
 Alumno a = new Alumno();
-a.Id= 1;
 a.PrimerNombre = "Juan";
 a.SegundoNombre = "Perez";
 
@@ -11,4 +10,11 @@ b.Id = 2;
 b.PrimerNombre = "Maria";
 b.SegundoNombre = "Martinez";
 
+Alumno c = new Alumno(3);
+c.PrimerNombre = "Alicia";
+
+
+
 Console.WriteLine(a.PrimerNombre);
+Console.WriteLine(b.PrimerNombre);
+Console.WriteLine(c.PrimerNombre);
