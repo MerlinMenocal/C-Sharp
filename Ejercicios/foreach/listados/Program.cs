@@ -22,3 +22,17 @@ foreach (var numero in numeros)
     Console.WriteLine(numero);
 }
 
+List<alumno> alumnos = new List<Alumno>();
+Alumno a= new alumno(1, "Pedro");
+Alumno b= new alumno(2, "Eduar");
+Alumno c= new alumno(3, "Elias");
+
+alumnos.Add(a);
+alumnos.Add(b);
+alumnos.Add(c);
+
+foreach (var alumno in alumnos ){
+    Console.WriteLine(alumno.Nombre);
+}
+
+
