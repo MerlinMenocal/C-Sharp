@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using System.Collection.Generic;
+using System.Collections.Generic;
 
 List<string> nombres = new List<string>();
 nombres.Add("Juan");
