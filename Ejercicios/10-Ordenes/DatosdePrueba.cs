@@ -33,7 +33,9 @@ public class DatosdePrueba
         Console.WriteLine("");
         foreach (var producto in ListadeProductos)
         {
-            Console.WriteLine(producto.Codigo + " | " + producto.Descripcion + " | " + producto.Precio);
+            Console.WriteLine(producto.Codigo + " | " + producto.Descripcion + " | " + producto.Precio);     
         }
+
+        Console.ReadLine();
     }
 }

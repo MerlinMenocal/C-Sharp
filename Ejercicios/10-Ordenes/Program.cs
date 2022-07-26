@@ -25,6 +25,7 @@ while (true)
          break;
 
         default:
+         break;
     }
 
 
