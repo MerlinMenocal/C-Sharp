@@ -27,7 +27,7 @@ public class DatosdePrueba
 
     public void listarProductos()
     {
-        Console.clear();
+        Console.Clear();
         Console.WriteLine("Lista de Productos");
         Console.WriteLine("------------------");
         Console.WriteLine("");
