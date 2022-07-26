@@ -1,6 +1,6 @@
-public class Orden{
+public class Orden
+{
 
-    {
      public int Codigo {get; set; }
      public DateTime Fecha {get; set; }
      public string NumerodeOrden {get; set; }
@@ -17,6 +17,5 @@ public class Orden{
             Vendedor = vendedor;
         }
 
-    }
-
 }
+

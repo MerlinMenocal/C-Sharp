@@ -14,13 +14,13 @@ public class DatosdePrueba
     
     private void cargarProductos()
     {
-        Producto a = new Producto(1, "Mouse", 250)
+        Producto a = new Producto(1, "Mouse", 250);
         ListadeProductos.Add(a);
 
-        Producto b = new Producto(2, "Monitor", 4600)
+        Producto b = new Producto(2, "Monitor", 4600);
         ListadeProductos.Add(b);
 
-        Producto c = new Producto(3, "Teclado", 800)
+        Producto c = new Producto(3, "Teclado", 800);
         ListadeProductos.Add(c);
 
     }
