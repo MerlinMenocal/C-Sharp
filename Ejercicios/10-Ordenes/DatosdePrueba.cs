@@ -7,7 +7,7 @@ public class DatosdePrueba
 
     public DatosdePrueba()
     {
-        ListadeProductos = new list<Producto>();
+        ListadeProductos = new List<Producto>();
         cargarProductos();
     }
 

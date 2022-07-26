@@ -6,7 +6,7 @@ string opcion = "";
 
 while (true)
 {
-    Console.clear();
+    Console.Clear();
     Console.WriteLine("Sistema de Ordenes");
     Console.WriteLine("------------------");
     Console.WriteLine("");

@@ -10,7 +10,7 @@ public class OrdenDetalle
     Codigo = codigo;
     Cantidad = cantidad;
     Producto = producto;
-    Precio = producto.precio;
+    Precio = producto.Precio;
 
   }
 }
