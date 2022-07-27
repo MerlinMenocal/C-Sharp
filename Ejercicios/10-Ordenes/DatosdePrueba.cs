@@ -190,17 +190,17 @@ public class DatosdePrueba
         Console.WriteLine("----------------");
         Console.WriteLine("");
         
-        Console.WriteLine("Codigo: ");
-        Console.WriteLine("Ciente: ");
-        Console.WriteLine("Atendido por: ");
         Console.WriteLine("==============");
         Console.WriteLine("");
 
         foreach (var orden in ListaOrdenes)
         {
-            Console.WriteLine("Fecha: " + orden.Fecha);
-            Console.WriteLine(orden.Codigo + " | " + orden.Fecha + " | " + orden.Total);
-            Console.WriteLine(orden.Cliente.Nombre + " | " + orden.Vendedor );
+            Console.WriteLine("Fecha y Hora: " + orden.Fecha);
+            Console.WriteLine("Codigo: " + orden.Codigo );
+            Console.WriteLine("Ciente: " + orden.Cliente.Nombre);
+            Console.WriteLine("Atendido por: " + orden.Vendedor);
+
+            Console.WriteLine(orden.Total);
             
             foreach(var detalle in orden.ListaOrdenDetalle)
             {
