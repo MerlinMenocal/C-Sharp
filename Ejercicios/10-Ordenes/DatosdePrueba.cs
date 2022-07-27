@@ -197,8 +197,8 @@ public class DatosdePrueba
         {
             Console.WriteLine("Fecha y Hora: " + orden.Fecha);
             Console.WriteLine("Codigo: " + orden.Codigo );
-            Console.WriteLine("Ciente: " + orden.Cliente.Nombre);
-            Console.WriteLine("Atendido por: " + orden.Vendedor);
+            Console.WriteLine("Cliente: " + orden.Cliente.Nombre);
+            Console.WriteLine("Atendido por: " + vendedor.Nombre);
 
             Console.WriteLine(orden.Total);
             
