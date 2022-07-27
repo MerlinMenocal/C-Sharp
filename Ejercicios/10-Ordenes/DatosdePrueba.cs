@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-public class DatosdePrueba 
+public class DatosdePrueba
 {
     public List<Producto> ListadeProductos {get; set;}
 
@@ -83,7 +83,7 @@ public class DatosdePrueba
         Console.WriteLine("");
         foreach (var cliente in ListadeClientes)
         {
-            Console.WriteLine(cliente.Codigo + " | " + cliente.Nombre + " | " + cliente.telefono);     
+            Console.WriteLine(cliente.Codigo + " | " + cliente.Nombre + " | " + cliente.Telefono);     
         }
 
         Console.ReadLine();
