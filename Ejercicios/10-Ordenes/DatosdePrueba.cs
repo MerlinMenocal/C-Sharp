@@ -48,7 +48,7 @@ public class DatosdePrueba
 
     }
 
-    private void ListadeVendedores()
+    private void cargarVendedores()
     {
         Vendedor v1 = new Vendedor(1, "Adrian", "V001");
         ListadeVendedores.Add(v1);
