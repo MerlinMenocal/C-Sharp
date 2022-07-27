@@ -25,6 +25,10 @@ while (true)
          datos.listarProductos();
          break;
 
+         case "2":
+         datos.CrearOrden();
+         break;
+
          case "3":
          datos.listarClientes();
          break;

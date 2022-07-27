@@ -9,6 +9,8 @@ public class DatosdePrueba
 
     public List<Vendedor> ListadeVendedores {get; set;}
 
+    public List<Orden> ListaOrdenes {get; set;}
+
     public DatosdePrueba()
     {
         ListadeProductos = new List<Producto>();
@@ -19,6 +21,9 @@ public class DatosdePrueba
 
         ListadeVendedores = new List<Vendedor>();
         cargarVendedores();
+
+        ListaOrdenes = new List<Orden>();
+
     }
 
     
@@ -101,5 +106,62 @@ public class DatosdePrueba
         }
 
         Console.ReadLine();
+    }
+
+    public void CrearOrden()
+    {
+        Console.WriteLine("Creando orden");
+        Console.WriteLine("-------------");
+        Console.WriteLine("");
+
+        Console.WriteLine("Ingrese el Codigo del Cliente: ");
+        string codigoCliente = Console.ReadLine();
+
+        Console.WriteLine("Ingrese el Codigo del Vendedor: ");
+        string codigoVendedor = Console.ReadLine();
+        
+        Cliente cliente = listarClientes.Find(c => c.Codigo == codigoCliente);
+        
+        if(cliente == null)
+        {
+            Console.WriteLine("Cliente no encontrado");
+            return;
+        }
+
+        Vendedor vendedor = ListadeVendedores.Find(v => v.Codigo == codigoVendedor);
+
+        if(vendedor == null)
+        {
+            Console.WriteLine("Vendedor no encontrado");
+            return;
+        }
+
+        int nuevoCodigo = ListaOrdenes.Count + 1;
+
+        Orden nuevaOrden = new Orden(1, DateTime.Now(), "SPS" + nuevoCodigo, cliente, vendedor)
+        ListaOrdenes.Add(nuevaOrden);
+
+        while (true)
+        {
+            Console.WriteLine("Ingrse el producto: ");
+            string codigoProducto = Console.ReadLine();
+
+            Producto producto = ListadeProductos.Find(p => p.Codigo == codigoProducto);
+        
+                if(producto == null)
+                {
+                    Console.WriteLine("Porducto no encontrado");
+                    return;
+                }else{
+                   nuevaOrden.AgregarProducto(producto);
+                }
+
+            Console.WriteLine("Desea continuar? s/n");
+            string continuar = Console.ReadLine();
+            if(continuar.ToLower() == "n")
+            {
+                break;
+            }
+        }
     }
 }
