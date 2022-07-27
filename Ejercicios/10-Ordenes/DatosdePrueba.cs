@@ -168,7 +168,7 @@ public class DatosdePrueba
                    nuevaOrden.AgregarProducto(producto);
                    
                 }
-
+            Console.WriteLine("");
             Console.WriteLine("Desea continuar? s/n");
             string continuar = Console.ReadLine();
             if(continuar.ToLower() == "n")
