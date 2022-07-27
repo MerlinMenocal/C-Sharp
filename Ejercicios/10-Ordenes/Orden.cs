@@ -34,7 +34,7 @@ public class Orden
            OrdenDetalle  o = new OrdenDetalle(nuevoCodigo, 1, producto);
            ListaOrdenDetalle.Add(o);
 
-           total += cantidad * producto.Precio;
+           Total += cantidad * producto.Precio;
         }
 
 }
