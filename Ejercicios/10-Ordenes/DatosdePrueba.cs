@@ -208,7 +208,7 @@ public class DatosdePrueba
 
                 Console.WriteLine("================================");
                 Console.WriteLine("");
-                Console.WriteLine("                SUB-TOTAL: L." + orden.Subtotal);
+                Console.WriteLine("               SUB-TOTAL: L." + orden.Subtotal);
                 Console.WriteLine("          IMPUESTO 15%: L." + orden.Impuesto);
                 Console.WriteLine("       TOTAL IMPUESTOS: L." + orden.Impuesto);
                 Console.WriteLine("       TOTAL A PAGAR: L." + orden.granTotal);
