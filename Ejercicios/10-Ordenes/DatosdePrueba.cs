@@ -192,8 +192,8 @@ public class DatosdePrueba
 
         foreach (var orden in ListaOrdenes)
         {
-            Console.WriteLine(orden.Codigo + " | " orden.Fecha + " | " + orden.Total);
-            Console.WriteLine(orden.Cliente.Nombre + " | " orden.Vendedor );
+            Console.WriteLine(orden.Codigo + " | " + orden.Fecha + " | " + orden.Total);
+            Console.WriteLine(orden.Cliente.Nombre + " | " + orden.Vendedor );
             
             foreach(var detalle in orden.ListaOrdenDetalle)
             {
