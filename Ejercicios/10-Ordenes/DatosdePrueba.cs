@@ -198,16 +198,7 @@ public class DatosdePrueba
             Console.WriteLine("Atendido por: " + orden.Vendedor.Nombre);
             Console.WriteLine("================================");
 
-            // Agrupa por descripcion de producto
-            var listaOrdenDetalleAgrupada = orden.ListaOrdenDetalle.GroupBy(
-            d => d.Producto.Descripcion, 
-            d => d,
-            (key, g) => new { 
-                Descripcion = key,
-                Cantidad = g.Sum(c => c.Cantidad),
-                Precio = g.Sum(c => c.Precio)
-            });
-
+            
             Console.WriteLine("Uds." + "     " + "DESCRIPCION" + "      " + "PRECIO");
             foreach(var detalle in orden.ListaOrdenDetalle)
             {
