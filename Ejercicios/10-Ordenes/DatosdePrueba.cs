@@ -120,7 +120,7 @@ public class DatosdePrueba
         Console.WriteLine("Ingrese el Codigo del Vendedor: ");
         string codigoVendedor = Console.ReadLine();
         
-        Cliente cliente = listadeClientes.Find(c => c.Codigo.ToString() == codigoCliente);
+        Cliente cliente = ListadeClientes.Find(c => c.Codigo.ToString() == codigoCliente);
         
         if(cliente == null)
         {
