@@ -124,7 +124,7 @@ public class DatosdePrueba
         if(cliente == null)
         {
             Console.WriteLine("Cliente no encontrado");
-            Console.ReadLine();
+            Console.WriteLine();
             return;
         }else {
             Console.WriteLine("Cliente: " + cliente.Nombre);
@@ -151,7 +151,7 @@ public class DatosdePrueba
 
         while (true)
         { 
-            Console.ReadLine();
+            Console.WriteLine();
             Console.WriteLine("Ingrese el producto: ");
             string codigoProducto = Console.ReadLine();
 
@@ -162,7 +162,8 @@ public class DatosdePrueba
                     Console.WriteLine("Producto no encontrado");
                     Console.ReadLine();
                 }else{
-                   Console.WriteLine("Porducto agregado: " + producto.Descripcion + " Precio: " + producto.Precio); 
+                   Console.WriteLine("Porducto agregado: " + producto.Descripcion);
+                   Console.WriteLine("Precio:            " + producto.Precio); 
                    nuevaOrden.AgregarProducto(producto);
                 }
 
