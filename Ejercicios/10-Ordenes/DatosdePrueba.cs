@@ -189,6 +189,12 @@ public class DatosdePrueba
         Console.WriteLine("Lista de Ordenes");
         Console.WriteLine("----------------");
         Console.WriteLine("");
+        Console.WriteLine("Fecha: ");
+        Console.WriteLine("Codigo: ");
+        Console.WriteLine("Ciente: ");
+        Console.WriteLine("Atendido por: ");
+        Console.WriteLine("==============");
+        Console.WriteLine("");
 
         foreach (var orden in ListaOrdenes)
         {
@@ -199,6 +205,7 @@ public class DatosdePrueba
             {
                 Console.WriteLine("      " + detalle.Producto.Descripcion + " | " + detalle.Cantidad + " | " + detalle.Precio);
             }
+            Console.ReadLine();
         }
         Console.ReadLine();
     }
