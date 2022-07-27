@@ -25,6 +25,14 @@ while (true)
          datos.listarProductos();
          break;
 
+         case "3":
+         datos.listarClientes();
+         break;
+
+         case "4":
+         datos.listarVendedores();
+         break;
+
         default:
          break;
     }
