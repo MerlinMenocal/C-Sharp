@@ -31,6 +31,7 @@ public class Orden
         {
             int nuevoCodigo =ListaOrdenDetalle.Count + 1;
             int cantidad = 1;
+            
            OrdenDetalle  o = new OrdenDetalle(nuevoCodigo, 1, producto);
            ListaOrdenDetalle.Add(o);
 
