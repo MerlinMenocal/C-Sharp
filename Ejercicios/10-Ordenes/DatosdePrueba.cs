@@ -97,7 +97,7 @@ public class DatosdePrueba
         Console.WriteLine("");
         foreach (var vendedor in ListadeVendedores)
         {
-            Console.WriteLine(vendedor.Codigo + " | " + vendedor.Nombre + " | " + vendedor.codigoVendedor);     
+            Console.WriteLine(vendedor.Codigo + " | " + vendedor.Nombre + " | " + vendedor.CodigoVendedor);     
         }
 
         Console.ReadLine();
