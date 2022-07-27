@@ -138,7 +138,7 @@ public class DatosdePrueba
 
         int nuevoCodigo = ListaOrdenes.Count + 1;
 
-        Orden nuevaOrden = new Orden(1, DateTime.Now(), "SPS" + nuevoCodigo, cliente, vendedor)
+        Orden nuevaOrden = new Orden(1, DateTime.Now(), "SPS" + nuevoCodigo, cliente, vendedor);
         ListaOrdenes.Add(nuevaOrden);
 
         while (true)
