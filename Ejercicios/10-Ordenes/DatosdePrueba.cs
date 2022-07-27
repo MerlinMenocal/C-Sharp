@@ -130,7 +130,7 @@ public class DatosdePrueba
             Console.WriteLine("Cliente: " + cliente.Nombre);
         }
 
-
+        Console.ReadLine();
         Console.WriteLine("Ingrese el Codigo del Vendedor: ");
         string codigoVendedor = Console.ReadLine();
 
@@ -150,7 +150,8 @@ public class DatosdePrueba
         ListaOrdenes.Add(nuevaOrden);
 
         while (true)
-        {
+        { 
+            Console.ReadLine();
             Console.WriteLine("Ingrese el producto: ");
             string codigoProducto = Console.ReadLine();
 
