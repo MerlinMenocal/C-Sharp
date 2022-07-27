@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 public class DatosdePrueba
 {
@@ -178,7 +179,7 @@ public class DatosdePrueba
             }
         }
         Console.WriteLine("");
-        Console.WriteLine("Total de la Orden es de: " + nuevaOrden.precioUnidad);
+        Console.WriteLine("Total de la Orden es de: " + nuevaOrden.precioUnidad.ToString("N2"));
         Console.ReadLine();
     }
 
@@ -186,33 +187,45 @@ public class DatosdePrueba
     {
 
         Console.Clear();
-        Console.WriteLine("                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         LISTA DE ORDENES");
+        Console.WriteLine("         LISTA DE ORDENES");
         Console.WriteLine("");
 
         foreach (var orden in ListaOrdenes)
         {
+            Console.WriteLine("Orden No. " + orden.Codigo );
             Console.WriteLine("Fecha y Hora: " + orden.Fecha);
-            Console.WriteLine("Factura No. " + orden.Codigo );
             Console.WriteLine("Cliente: " + orden.Cliente.Nombre);
             Console.WriteLine("Atendido por: " + orden.Vendedor.Nombre);
             Console.WriteLine("================================");
+
+            // Agrupa por descripcion de producto
+            var listaOrdenDetalleAgrupada = orden.ListaOrdenDetalle.GroupBy(
+            d => d.Producto.Descripcion, 
+            d => d,
+            (key, g) => new { 
+                Descripcion = key,
+                Cantidad = g.Sum(c => c.Cantidad),
+                Precio = g.Sum(c => c.Precio)
+            });
 
             Console.WriteLine("Uds." + "     " + "DESCRIPCION" + "      " + "PRECIO");
             foreach(var detalle in orden.ListaOrdenDetalle)
             {
             
-                Console.WriteLine(" " + detalle.Cantidad  +  "       " + detalle.Producto.Descripcion + "            " +  detalle.Precio);
+                Console.WriteLine(" " + detalle.Cantidad  +  "       " + detalle.Producto.Descripcion + "        " +  detalle.Precio.ToString("N2"));
                 //Console.WriteLine(
 
             }
 
-                Console.WriteLine("================================");
+                
                 Console.WriteLine("");
-                Console.WriteLine("               SUB-TOTAL: L." + orden.Subtotal);
-                Console.WriteLine("          IMPUESTO 15%: L." + orden.Impuesto);
-                Console.WriteLine("       TOTAL IMPUESTOS: L." + orden.Impuesto);
-                Console.WriteLine("       TOTAL A PAGAR: L." + orden.granTotal);
-            Console.WriteLine();
+                Console.WriteLine("           SUB-TOTAL: L." + orden.Subtotal.ToString("N2"));
+                Console.WriteLine("          IMPUESTO 15%: L." + orden.Impuesto.ToString("N2"));
+                Console.WriteLine("       TOTAL IMPUESTOS: L." + orden.Impuesto.ToString("N2"));
+                Console.WriteLine("       TOTAL A PAGAR: L." + orden.granTotal.ToString("N2"));
+                Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                Console.WriteLine();
+
         }
         Console.ReadLine();
     }
