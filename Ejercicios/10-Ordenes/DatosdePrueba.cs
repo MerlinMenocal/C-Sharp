@@ -130,7 +130,7 @@ public class DatosdePrueba
             Console.WriteLine("Cliente: " + cliente.Nombre);
         }
 
-        Console.ReadLine();
+        Console.WriteLine();
         Console.WriteLine("Ingrese el Codigo del Vendedor: ");
         string codigoVendedor = Console.ReadLine();
 
