@@ -40,9 +40,12 @@ public class Orden
            OrdenDetalle  o = new OrdenDetalle(nuevoCodigo, 1, producto);
            ListaOrdenDetalle.Add(o);
 
+            //int i = (int)Math.Round(Impuesto);
+
+           Math.Round(Impuesto, 2).ToString("#.#0");
            precioUnidad += cantidad * producto.Precio;
            Subtotal += precioUnidad;
-           Impuesto = impuesto * impuesto;
+           Impuesto = impuesto * Subtotal;
            granTotal  = Subtotal + Impuesto;
 
 

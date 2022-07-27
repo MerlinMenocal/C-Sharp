@@ -186,7 +186,7 @@ public class DatosdePrueba
     {
 
         Console.Clear();
-        Console.WriteLine("LISTA DE ORDENES");
+        Console.WriteLine("                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         LISTA DE ORDENES");
         Console.WriteLine("");
 
         foreach (var orden in ListaOrdenes)
