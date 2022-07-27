@@ -171,6 +171,7 @@ public class DatosdePrueba
             Console.WriteLine("");
             Console.WriteLine("Desea continuar? s/n");
             string continuar = Console.ReadLine();
+            Console.WriteLine("");
             if(continuar.ToLower() == "n")
             {
                 break;
