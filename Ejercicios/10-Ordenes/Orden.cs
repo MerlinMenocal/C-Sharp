@@ -27,7 +27,7 @@ public class Orden
 
         public void AgregarProducto(Producto producto)
         {
-            int nuevoCodigo =ListaOrdenDetalle.count + 1;
+            int nuevoCodigo =ListaOrdenDetalle.Count + 1;
            OrdenDetalle  o = new OrdenDetalle(nuevoCodigo, 1, producto);
            ListaOrdenDetalle.Add(o);
         }

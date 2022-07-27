@@ -120,7 +120,7 @@ public class DatosdePrueba
         Console.WriteLine("Ingrese el Codigo del Vendedor: ");
         string codigoVendedor = Console.ReadLine();
         
-        Cliente cliente = listarClientes.Find(c => c.Codigo == codigoCliente);
+        Cliente cliente = listadeClientes.Find(c => c.Codigo.ToString() == codigoCliente);
         
         if(cliente == null)
         {
@@ -128,7 +128,7 @@ public class DatosdePrueba
             return;
         }
 
-        Vendedor vendedor = ListadeVendedores.Find(v => v.Codigo == codigoVendedor);
+        Vendedor vendedor = ListadeVendedores.Find(v => v.Codigo.ToString() == codigoVendedor);
 
         if(vendedor == null)
         {
@@ -138,7 +138,7 @@ public class DatosdePrueba
 
         int nuevoCodigo = ListaOrdenes.Count + 1;
 
-        Orden nuevaOrden = new Orden(1, DateTime.Now(), "SPS" + nuevoCodigo, cliente, vendedor);
+        Orden nuevaOrden = new Orden(1, DateTime.Now, "SPS" + nuevoCodigo, cliente, vendedor);
         ListaOrdenes.Add(nuevaOrden);
 
         while (true)
@@ -146,7 +146,7 @@ public class DatosdePrueba
             Console.WriteLine("Ingrse el producto: ");
             string codigoProducto = Console.ReadLine();
 
-            Producto producto = ListadeProductos.Find(p => p.Codigo == codigoProducto);
+            Producto producto = ListadeProductos.Find(p => p.Codigo.ToString() == codigoProducto);
         
                 if(producto == null)
                 {
