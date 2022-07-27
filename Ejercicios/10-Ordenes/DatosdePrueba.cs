@@ -180,6 +180,26 @@ public class DatosdePrueba
         Console.WriteLine("");
         Console.WriteLine("Total de la Orden es de: " + nuevaOrden.Total);
         Console.ReadLine();
+    }
 
+    public void ListarOrdenes()
+    {
+
+        Console.Clear();
+        Console.WriteLine("Lista de Ordenes");
+        Console.WriteLine("----------------");
+        Console.WriteLine("");
+
+        foreach (var orden in ListaOrdenes)
+        {
+            Console.WriteLine(orden.Codigo + " | " orden.Fecha + " | " + orden.Total);
+            Console.WriteLine(orden.Cliente.Nombre + " | " orden.Vendedor );
+            
+            foreach(var detalle in orden.ListaOrdenDetalle)
+            {
+                Console.WriteLine("      " + detalle.Producto.Descripcion + " | " + detalle.Cantidad + " | " + detalle.Precio);
+            }
+        }
+        Console.ReadLine();
     }
 }

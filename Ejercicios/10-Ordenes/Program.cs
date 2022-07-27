@@ -36,6 +36,10 @@ while (true)
          case "4":
          datos.listarVendedores();
          break;
+         
+         case "5":
+         datos.ListarOrdenes();
+         break;
 
         default:
          break;
