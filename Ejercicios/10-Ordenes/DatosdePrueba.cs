@@ -128,7 +128,7 @@ public class DatosdePrueba
             return;
         }else {
             Console.WriteLine("Cliente: " + cliente.Nombre);
-            Console.WriteLine("";)
+            Console.WriteLine("");
         }
 
         Console.WriteLine();
@@ -143,7 +143,7 @@ public class DatosdePrueba
             return;
         }else{
             Console.WriteLine("Vendedor: " + vendedor.Nombre);
-            Console.WriteLine
+            Console.WriteLine("");
         }
 
         int nuevoCodigo = ListaOrdenes.Count + 1;
@@ -180,6 +180,6 @@ public class DatosdePrueba
         Console.WriteLine("");
         Console.WriteLine("Total de la Orden es de: " + nuevaOrden.Total);
         Console.WriteLine();
-        
+
     }
 }
