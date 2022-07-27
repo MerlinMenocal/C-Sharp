@@ -161,7 +161,7 @@ public class DatosdePrueba
                     Console.WriteLine("Producto no encontrado");
                     Console.ReadLine();
                 }else{
-                   Console.WriteLine("Porducto agregado: " + producto.Descripcion + " Precio: " + Producto.Precio); 
+                   Console.WriteLine("Porducto agregado: " + producto.Descripcion + " Precio: " + producto.Precio); 
                    nuevaOrden.AgregarProducto(producto);
                 }
 
