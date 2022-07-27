@@ -110,6 +110,7 @@ public class DatosdePrueba
 
     public void CrearOrden()
     {
+        Console.Clear();
         Console.WriteLine("Creando orden");
         Console.WriteLine("-------------");
         Console.WriteLine("");
@@ -117,16 +118,21 @@ public class DatosdePrueba
         Console.WriteLine("Ingrese el Codigo del Cliente: ");
         string codigoCliente = Console.ReadLine();
 
-        Console.WriteLine("Ingrese el Codigo del Vendedor: ");
-        string codigoVendedor = Console.ReadLine();
         
         Cliente cliente = ListadeClientes.Find(c => c.Codigo.ToString() == codigoCliente);
         
         if(cliente == null)
         {
             Console.WriteLine("Cliente no encontrado");
+            Console.ReadLine();
             return;
+        }else {
+            Console.WriteLine("Cliente: " + cliente.Nombre);
         }
+
+
+        Console.WriteLine("Ingrese el Codigo del Vendedor: ");
+        string codigoVendedor = Console.ReadLine();
 
         Vendedor vendedor = ListadeVendedores.Find(v => v.Codigo.ToString() == codigoVendedor);
 
@@ -134,6 +140,8 @@ public class DatosdePrueba
         {
             Console.WriteLine("Vendedor no encontrado");
             return;
+        }else{
+            Console.WriteLine("Vendedor: " + vendedor.Nombre);
         }
 
         int nuevoCodigo = ListaOrdenes.Count + 1;
@@ -153,6 +161,7 @@ public class DatosdePrueba
                     Console.WriteLine("Producto no encontrado");
                     Console.ReadLine();
                 }else{
+                   Console.WriteLine("Porducto agregado: " + producto.Descripcion + " Precio: " + Producto.Precio); 
                    nuevaOrden.AgregarProducto(producto);
                 }
 
