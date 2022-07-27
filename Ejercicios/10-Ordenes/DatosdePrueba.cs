@@ -148,7 +148,7 @@ public class DatosdePrueba
 
         int nuevoCodigo = ListaOrdenes.Count + 1;
 
-        Orden nuevaOrden = new Orden(1, DateTime.Now, "SPS" + nuevoCodigo, cliente, vendedor);
+        Orden nuevaOrden = new Orden(nuevoCodigo, DateTime.Now, "SPS" + nuevoCodigo, cliente, vendedor);
         ListaOrdenes.Add(nuevaOrden);
 
         while (true)
@@ -198,15 +198,14 @@ public class DatosdePrueba
             Console.WriteLine("Fecha y Hora: " + orden.Fecha);
             Console.WriteLine("Codigo: " + orden.Codigo );
             Console.WriteLine("Cliente: " + orden.Cliente.Nombre);
-            Console.WriteLine("Atendido por: " + vendedor.Nombre);
+            Console.WriteLine("Atendido por: " + orden.Vendedor.Nombre);
 
-            Console.WriteLine(orden.Total);
             
             foreach(var detalle in orden.ListaOrdenDetalle)
             {
                 Console.WriteLine("      " + detalle.Producto.Descripcion + " | " + detalle.Cantidad + " | " + detalle.Precio);
             }
-            Console.ReadLine();
+            Console.WriteLine();
         }
         Console.ReadLine();
     }
