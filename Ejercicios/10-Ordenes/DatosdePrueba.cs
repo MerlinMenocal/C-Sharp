@@ -143,15 +143,15 @@ public class DatosdePrueba
 
         while (true)
         {
-            Console.WriteLine("Ingrse el producto: ");
+            Console.WriteLine("Ingrese el producto: ");
             string codigoProducto = Console.ReadLine();
 
             Producto producto = ListadeProductos.Find(p => p.Codigo.ToString() == codigoProducto);
         
                 if(producto == null)
                 {
-                    Console.WriteLine("Porducto no encontrado");
-                    return;
+                    Console.WriteLine("Producto no encontrado");
+                    Console.ReadLine();
                 }else{
                    nuevaOrden.AgregarProducto(producto);
                 }
