@@ -36,7 +36,7 @@ public class Orden
 
         }
 
-        Total += cantidad * producto.Precio;
+        Total += cantidad * (producto.Precio);
 
 }
 
