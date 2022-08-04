@@ -18,6 +18,9 @@ public class Animales
         Peso = peso;
         ColorOjos = colorojos;
         Comer = comer;
-
     }
+
+public void Comer(){
+    Console.WriteLine("Este animal come");
+}
 }

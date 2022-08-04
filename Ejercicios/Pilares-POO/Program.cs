@@ -27,9 +27,9 @@ while (true)
          lista.listarAnimales();
          break;
 
-         case "2":
-         lista.caminar();
-         break;
+        //  case "2":
+        //  lista.caminar();
+        //  break;
 
         //   case "3":
         //   lista.listarmamiferos();

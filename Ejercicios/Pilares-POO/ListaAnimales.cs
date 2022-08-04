@@ -45,6 +45,7 @@ public void listarAnimales()
             Console.WriteLine("Color de Ojos: " + Animales.ColorOjos);
             Console.WriteLine("Alimentacion: " + Animales.Comer);
             Console.WriteLine("=====================");
+            Comer();
                  
         }
 
