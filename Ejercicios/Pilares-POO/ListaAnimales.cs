@@ -4,15 +4,15 @@ using System.Collections.Generic;
 public class ListaAnimales {
 
     public List<Animales> ListadeAnimales {get; set;}
-    public List<Mamiferos> ListadeMamiferos {get; set;} 
+    // public List<Mamiferos> ListadeMamiferos {get; set;} 
 
     public ListaAnimales()
     {
      ListadeAnimales = new List<Animales>();
      encontrarAnimales();
      
-     ListadeMamiferos = new List<Mamiferos>();
-     caminar();
+    //  ListadeMamiferos = new List<Mamiferos>();
+    //  caminar();
 
  
     }
@@ -43,7 +43,6 @@ public void listarAnimales()
             Console.WriteLine("Color: " + Animales.Color);
             Console.WriteLine("Peso en Kg: " + Animales.Peso);
             Console.WriteLine("Color de Ojos: " + Animales.ColorOjos);
-            Console.WriteLine("Alimentacion: " + Animales.Comer);
             Console.WriteLine("=====================");
             Comer();
                  
@@ -52,34 +51,34 @@ public void listarAnimales()
         Console.ReadLine();
     }
 
-    private void caminar(){
+//     private void caminar(){
 
-    Mamiferos a = new Mamiferos("Oso", "cafe", 150, "cafes", "Comida");
-    ListadeMamiferos.Add(a);
+//     Mamiferos a = new Mamiferos("Oso", "cafe", 150, "cafes", "Comida");
+//     ListadeMamiferos.Add(a);
 
-    Mamiferos b = new Mamiferos("Oso", "cafe", 150, "cafes", "Comida");
-    ListadeMamiferos.Add(b);
-   }
+//     Mamiferos b = new Mamiferos("Oso", "cafe", 150, "cafes", "Comida");
+//     ListadeMamiferos.Add(b);
+//    }
 
- public void listarMamiferos()
-    {
-        Console.Clear();
-        Console.WriteLine("Lista de Animales");
-        Console.WriteLine("-----------------");
-        Console.WriteLine("");
-        foreach (var mamiferos in ListadeMamiferos)
-        {
-            Console.WriteLine("Animal: " + mamiferos.Nombre);
-            Console.WriteLine("Color: " + mamiferos.Color);
-            Console.WriteLine("Peso en Kg: " + mamiferos.Peso);
-            Console.WriteLine("Color de Ojos: " + mamiferos.ColorOjos);
-            Console.WriteLine("Alimentacion: " + mamiferos.patas);
-            Console.WriteLine("=====================");
+//  public void listarMamiferos()
+//     {
+//         Console.Clear();
+//         Console.WriteLine("Lista de Animales");
+//         Console.WriteLine("-----------------");
+//         Console.WriteLine("");
+//         foreach (var mamiferos in ListadeMamiferos)
+//         {
+//             Console.WriteLine("Animal: " + mamiferos.Nombre);
+//             Console.WriteLine("Color: " + mamiferos.Color);
+//             Console.WriteLine("Peso en Kg: " + mamiferos.Peso);
+//             Console.WriteLine("Color de Ojos: " + mamiferos.ColorOjos);
+//             Console.WriteLine("Alimentacion: " + mamiferos.patas);
+//             Console.WriteLine("=====================");
                  
-        }
+//         }
 
-        Console.ReadLine();
-    }
+//         Console.ReadLine();
+//     }
 }
 
 
