@@ -28,7 +28,7 @@ while (true)
          break;
 
          case "2":
-         lista.caminar();
+         lista.listarMamiferos();
          break;
 
         //   case "3":

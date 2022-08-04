@@ -12,7 +12,7 @@ public class ListaAnimales {
      encontrarAnimales();
      
      ListadeMamiferos = new List<Mamiferos>();
-     //caminar();
+     caminar();
 
  
     }
@@ -54,27 +54,27 @@ public void listarAnimales()
         Console.ReadLine();
     }
 
-//     private void caminar(){
+    private void caminar(){
 
-//     Mamiferos a = new Mamiferos("Oso", "cafe", 150, "cafes");
-//     ListadeMamiferos.Add(a);
+    Mamiferos a = new Mamiferos("Oso", "cafe", 150, "cafes", "4 patas");
+    ListadeMamiferos.Add(a);
 
-//     Mamiferos b = new Mamiferos("Oso", "cafe", 150, "cafes");
-//     ListadeMamiferos.Add(b);
-//    }
+    Mamiferos b = new Mamiferos("Oso", "cafe", 150, "cafes", "4 patas");
+    ListadeMamiferos.Add(b);
+   }
 
  public void listarMamiferos()
     {
         Console.Clear();
-        Console.WriteLine("Lista de Animales");
+        Console.WriteLine("Lista de Mamiferos");
         Console.WriteLine("-----------------");
         Console.WriteLine("");
-        foreach (var mamiferos in ListadeMamiferos)
+        foreach (var Mamiferos in ListadeMamiferos)
         {
-            // Console.WriteLine("Animal: " + mamiferos.Nombre);
-            // Console.WriteLine("Color: " + mamiferos.Color);
-            // Console.WriteLine("Peso en Kg: " + mamiferos.Peso);
-            // Console.WriteLine("Color de Ojos: " + mamiferos.ColorOjos);
+            Console.WriteLine("Animal: " + Mamiferos.Nombre);
+            Console.WriteLine("Color: " + Mamiferos.Color);
+            Console.WriteLine("Peso en Kg: " + Mamiferos.Peso);
+            Console.WriteLine("Color de Ojos: " + Mamiferos.ColorOjos);
             Console.ForegroundColor = ConsoleColor.Yellow;
             Mamiferos.Caminar();
             Console.ForegroundColor = ConsoleColor.White;
