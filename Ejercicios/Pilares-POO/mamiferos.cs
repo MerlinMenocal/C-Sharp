@@ -9,7 +9,6 @@ using System.Collections.Generic;
         
     public Mamiferos(string nombre, string color, double peso, string colorojos, string patas)
     {
-       
         Nombre = nombre;
         Color = color;
         Peso = peso;
