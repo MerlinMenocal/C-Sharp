@@ -13,10 +13,10 @@ public class Animales
     // constructor para inicializar valores
     public Animales(string nombre, string color, double peso, string colorojos)
     {
-        Nombre = nombre;
-        Color = color;
-        Peso = peso;
-        ColorOjos = colorojos;
+        // Nombre = nombre;
+        // Color = color;
+        // Peso = peso;
+        // ColorOjos = colorojos;
     }
 
 public void Comer(){
