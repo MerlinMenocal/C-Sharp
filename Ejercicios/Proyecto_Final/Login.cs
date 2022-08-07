@@ -5,11 +5,11 @@ namespace Seguridad{
 
     public class Login{
 
-        List<Usuario> usuario;
+        private List<Usuario> usuario;
 
         public Login()
         {
-            private usuario = new List<Usuario>();
+            usuario = new List<Usuario>();
 
             Usuario L1 = new Usuario();
             L1.pinAcceso = "8970";
