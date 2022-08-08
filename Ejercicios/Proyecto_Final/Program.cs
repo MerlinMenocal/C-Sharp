@@ -25,6 +25,7 @@ class Program
             bool resultado = Log.Validar(pinacceso);
 
             if(resultado == true){
+                
                 break;
             }else{
                 Console.WriteLine("Código incorrecto!");

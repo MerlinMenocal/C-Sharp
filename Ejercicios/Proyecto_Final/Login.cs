@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace Seguridad
 {
-    public class Login{
-
-        private List<Usuario> usuario{get; set;}
+    public class Login
+    {
+       private List<Usuario> usuarios{get; set;}
 
         public Login()
         {
-            usuario = new List<Usuario>();
+            usuarios = new List<Usuario>();
 
             Usuario L1 = new Usuario();
             L1.pinAcceso = "8970";
@@ -17,13 +17,13 @@ namespace Seguridad
             Usuario L2 = new Usuario();
             L2.pinAcceso = "9874";
 
-            usuario.Add(L1);
-            usuario.Add(L2);
+            usuarios.Add(L1);
+            usuarios.Add(L2);
         }
         
         public bool Validar(string pinacceso)
         {
-            foreach (var usuario in usuario){
+            foreach (var usuario in usuarios){
              if(usuario.pinAcceso == usuario.pinacceso)
              {
                 return true;
