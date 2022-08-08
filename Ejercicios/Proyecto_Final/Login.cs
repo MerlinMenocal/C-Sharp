@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 
-namespace Seguridad{
-
+namespace Seguridad
+{
     public class Login{
 
-        private List<Usuario> usuario;
+        private List<Usuario> usuario{get; set;}
 
         public Login()
         {
@@ -21,10 +21,10 @@ namespace Seguridad{
             usuario.Add(L2);
         }
         
-        public bool Validar(string pinacceso){
-
+        public bool Validar(string pinacceso)
+        {
             foreach (var usuario in usuario){
-             if(pinAcceso == pinacceso)
+             if(usuario.pinAcceso == usuario.pinacceso)
              {
                 return true;
              }
