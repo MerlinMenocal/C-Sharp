@@ -3,13 +3,16 @@ using System.Collections.Generic;
 
 //**************************************************************
 //INGRESO Y AUTENTICACION
-namespace Seguridad{
 
-class Program
+//Prueba caja = new PruebaCaja();
+namespace Seguridad{
+class Program 
 {
-    //public List<Salida> salidasRetiro {get; set;}
+
     static void Main(string[] args)
     {
+        Retiro dinero = new Retiro();
+
             string pinacceso = "";
             int contador = 1;
             Login Log = new Login();
@@ -67,9 +70,9 @@ class Program
         
         switch (opcion)
         {
-            // case "1":
-            //  ImprimirRetiro();
-            //  break;
+            case "1":
+             dinero.ImprimirRetiro();
+             break;
 
             //  case "2":
             //  lista.listarMamiferos();
