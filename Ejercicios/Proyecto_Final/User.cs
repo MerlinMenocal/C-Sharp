@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace User{
+namespace Seguridad{
 
     public class Usuario
     {

@@ -24,7 +24,7 @@ namespace Seguridad
         public bool Validar(string pinacceso)
         {
             foreach (var usuario in usuarios){
-             if(usuario.pinAcceso == usuario.pinacceso)
+             if(usuario.pinAcceso == pinacceso)
              {
                 return true;
              }
