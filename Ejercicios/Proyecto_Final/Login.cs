@@ -5,7 +5,7 @@ namespace Seguridad
 {
     public class Login
     {
-       private List<Usuario> usuarios{get; set;}
+        private List<Usuario> usuarios{get; set;}
 
         public Login()
         {
@@ -24,10 +24,10 @@ namespace Seguridad
         public bool Validar(string pinacceso)
         {
             foreach (var usuario in usuarios){
-             if(usuario.pinAcceso == pinacceso)
-             {
+            if(usuario.pinAcceso == pinacceso)
+            {
                 return true;
-             }
+            }
             } 
             return false;  
         }
