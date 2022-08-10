@@ -11,7 +11,7 @@ class Program
 
     static void Main(string[] args)
     {
-         Retiro Seguridad = new Retiro();
+    Retiro Seguridad = new Retiro();
 
             string pinacceso = "";
             int contador = 1;
