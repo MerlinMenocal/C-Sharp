@@ -11,21 +11,18 @@ namespace Seguridad
     public Movimientos()
     {
         MovimientoRetiro = new List<Retiro>();
-        hacerRetiro();
+        verRetiro();
     }
 
-    public void hacerRetiro()
+    public void verRetiro()
     {
-        double cantidadretirar = 0;
+      Console.Clear();
+      Console.Write("Ingresa la Cantidad a Retirar: ");
+      double CantidadRetirar = double.Parse(Console.ReadLine());
 
-        Total = montoDisponible - cantidadretirar;
-
-        Console.WriteLine("Ingrese la Cantidad a Retirar:");
-        CantidadRetirar = double.Parse(Console.ReadLine());
-
-        Console.WriteLine("Por favor no retires tu Tarjeta!");
-        Console.WriteLine("Retiro realizado por la Cantidad de:" + CantidadRetirar);
-
+      Console.WriteLine("Por favor no retires tu Tarjeta!");
+      Console.WriteLine("Retiro realizado por la Cantidad de:" + CantidadRetirar);
+      
     }
 
   }

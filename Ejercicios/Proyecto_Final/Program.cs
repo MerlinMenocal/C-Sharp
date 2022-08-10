@@ -7,7 +7,6 @@ namespace Seguridad{
 
         static void Main(string[] args)
         {
-            Movimientos opciones = new Movimientos();
             Login Log = new Login();
 
                 string pinacceso = "";
@@ -39,6 +38,7 @@ namespace Seguridad{
                     Console.WriteLine("Precione una tecla para continuar...");
                     Console.ReadKey();
 
+                    
                     string opcion = "";
 
         while (true)
@@ -63,11 +63,13 @@ namespace Seguridad{
             Console.WriteLine("       ________________________________________");
             Console.ForegroundColor = ConsoleColor.White;
             opcion = Console.ReadLine();
+
+            Movimientos opciones = new Movimientos();
             
             switch (opcion)
             {
                 case "1":
-                opciones.hacerRetiro();
+                opciones.verRetiro();
                 break;
 
                 //  case "2":
