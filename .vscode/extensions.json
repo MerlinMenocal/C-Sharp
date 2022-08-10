@@ -2,6 +2,7 @@
     "recommendations": [
         "akamud.vscode-theme-onedark",
         "beardedbear.beardedtheme",
-        "adrianwilczynski.namespace"
+        "adrianwilczynski.namespace",
+        "esbenp.prettier-vscode"
     ]
 }
