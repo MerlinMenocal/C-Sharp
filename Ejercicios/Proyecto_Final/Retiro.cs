@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace Seguridad{
 
+    
     public class Retiro{
 
     public double MontoDisponible {get; set; }

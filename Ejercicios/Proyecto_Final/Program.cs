@@ -11,7 +11,7 @@ class Program
 
     static void Main(string[] args)
     {
-        Retiro dinero = new Retiro();
+         Retiro Seguridad = new Retiro();
 
             string pinacceso = "";
             int contador = 1;
@@ -71,7 +71,7 @@ class Program
         switch (opcion)
         {
             case "1":
-             dinero.ImprimirRetiro();
+             Seguridad.ImprimirRetiro();
              break;
 
             //  case "2":
