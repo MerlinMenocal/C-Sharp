@@ -7,12 +7,12 @@ namespace Seguridad{
 
         static void Main(string[] args)
         {
-        Retiro Seguridad = new Retiro();
+            Movimientos opciones = new Movimientos();
+            Login Log = new Login();
 
                 string pinacceso = "";
                 int contador = 1;
-                Login Log = new Login();
-
+                
             while(true)
             {
                 Console.Clear();
@@ -67,7 +67,7 @@ namespace Seguridad{
             switch (opcion)
             {
                 case "1":
-                Seguridad.ImprimirRetiro();
+                opciones.hacerRetiro();
                 break;
 
                 //  case "2":
