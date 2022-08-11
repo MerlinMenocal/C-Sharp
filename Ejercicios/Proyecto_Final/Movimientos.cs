@@ -20,9 +20,12 @@ namespace Seguridad
       Console.Write("Ingresa la Cantidad a Retirar: ");
       double CantidadRetirar = double.Parse(Console.ReadLine());
 
+      if(CantidadRetirar == 0){
+        Console.WriteLine("No se a ingresado una cantidad!");
+      }else{
       Console.WriteLine("Por favor no retires tu Tarjeta!");
       Console.WriteLine("Retiro realizado por la Cantidad de:" + CantidadRetirar);
-      
+      }
     }
 
   }

@@ -11,30 +11,32 @@ namespace Seguridad{
     public double CantidadRetirar {get; set; }
     public DateTime Fecha {get; set; }
     public double Total {get; set; }
+    public double montoTotal {get; set; }
 
-    
-    
-        public Retiro (double montoDisponible, double cantidadretirar, DateTime fecha, double total)
+        public Retiro (double montoDisponible, double cantidadretirar, DateTime fecha, double total, double montototal)
         {
             MontoDisponible = montoDisponible;
             CantidadRetirar = cantidadretirar;
             Fecha = fecha;
             Total = total;
+            montoTotal = montototal;
 
-            CalculodeRetiro = new List<Retiro>();
-
-        }
-
-        public void calcularRetiro()
-        {
-            // Retiro r = new Retiro();
-            // CalculodeRetiro.Add(r);
-
-            double MontoDisponible = 50000;
-
-            Total = MontoDisponible - CantidadRetirar;
+           // CalculodeRetiro = new List<Retiro>();
 
         }
+
+        // public void calcularRetiro()
+        // {
+        //     // Retiro r = new Retiro();
+        //     // CalculodeRetiro.Add(r);
+
+        //     Movimientos m = new Movimientos();
+
+        //     double MontoDisponible = 50000;
+
+        //     Total = MontoDisponible - CantidadRetirar;
+
+        // }
     
     }
 }
