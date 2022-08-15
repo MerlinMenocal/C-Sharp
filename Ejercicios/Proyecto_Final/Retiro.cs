@@ -1,42 +1,37 @@
-using System;
-using System.Collections.Generic;
+// using System;
+// using System.Collections.Generic;
 
-namespace Seguridad{
 
-    public class Retiro
-    {
-    public List<Retiro> CalculodeRetiro {get; set;}
 
-    public double MontoDisponible {get; set; }
-    public double CantidadRetirar {get; set; }
-    public DateTime Fecha {get; set; }
-    public double Total {get; set; }
-    public double montoTotal {get; set; }
+//     public class Retiro
+//     {
 
-        public Retiro (double montoDisponible, double cantidadretirar, DateTime fecha, double total, double montototal)
-        {
-            MontoDisponible = montoDisponible;
-            CantidadRetirar = cantidadretirar;
-            Fecha = fecha;
-            Total = total;
-            montoTotal = montototal;
+//     public DateTime Fecha {get; set; }
 
-           // CalculodeRetiro = new List<Retiro>();
+//     public List<Retiro> CalculodeRetiro {get; set;}
 
-        }
+//     public int MontoDisponible {get; set; }
+//     public int CantidadRetirar {get; set; }
+//     public int Total {get; set; }
+//     public int montoTotal {get; set; }
 
-        // public void calcularRetiro()
-        // {
-        //     // Retiro r = new Retiro();
-        //     // CalculodeRetiro.Add(r);
+//         public Retiro (int montoDisponible, int cantidadretirar, DateTime fecha, int total, int montototal)
+//         {
+//             MontoDisponible = montoDisponible;
+//             CantidadRetirar = cantidadretirar;
+//             Fecha = fecha;
+//             Total = total;
+//             montoTotal = montototal;
+//             CalculodeRetiro = new List<Retiro>();
+//         }
 
-        //     Movimientos m = new Movimientos();
+//     public void verDetalle()
+//     {
+//         Retiro r = new Retiro(r.montoDisponible(50000));
+//         CalculodeRetiro.Add(r);
 
-        //     double MontoDisponible = 50000;
+//         montoTotal = cantidadretirar - MontoDisponible;
+//     }
 
-        //     Total = MontoDisponible - CantidadRetirar;
-
-        // }
     
-    }
-}
+//     }
