@@ -54,10 +54,8 @@ namespace Seguridad{
             Console.WriteLine("");
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("       | 1 - Retirar Dinero                   |");
-            Console.WriteLine("       | 2 - Depósitos                        |");
-            Console.WriteLine("       | 3 - Ver Saldo Disponible             |");
-            Console.WriteLine("       | 4 - Historial de Transacciones       |");
-            Console.WriteLine("       | 5 - Pagos                            |");
+            Console.WriteLine("       | 2 - Ver Saldo Disponible             |");
+            Console.WriteLine("       | 3 - Historial de Transacciones       |");8
             Console.ForegroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("       | 0 - Salir                            |");
