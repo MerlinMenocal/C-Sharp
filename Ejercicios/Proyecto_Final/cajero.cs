@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-//using System.Movimientos.verRetiro;
-
 
 namespace Seguridad{
     class Program 
@@ -55,7 +53,7 @@ namespace Seguridad{
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("       | 1 - Retirar Dinero                   |");
             Console.WriteLine("       | 2 - Ver Saldo Disponible             |");
-            Console.WriteLine("       | 3 - Historial de Transacciones       |");8
+            Console.WriteLine("       | 3 - Historial de Transacciones       |");
             Console.ForegroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("       | 0 - Salir                            |");
